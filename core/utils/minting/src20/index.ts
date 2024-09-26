@@ -37,14 +37,14 @@ export async function mintSRC20({
     });
 
     const client: Client = await getClient();
-    const mint_info = await checkMintedOut(
-      client,
-      tick,
-      amt,
-    );
-    if (mint_info.minted_out === true) {
-      throw new Error(`Error: token ${tick} already minted out`);
-    }
+    // const mint_info = await checkMintedOut(
+    //   client,
+    //   tick,
+    //   amt,
+    // );
+    // if (mint_info.minted_out === true) {
+    //   throw new Error(`Error: token ${tick} already minted out`);
+    // }
     const src20_mint_obj = {
       op: "MINT",
       p: "SRC-20",

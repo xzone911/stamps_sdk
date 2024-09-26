@@ -1,5 +1,5 @@
 
-const base_endpoint = "https://mempool.space/";
+const base_endpoint = "https://mempool.fractalbitcoin.io/";
 const MAX_RETRIES = 3;
 
 export const getRecommendedFees = async (retries = 0) => {

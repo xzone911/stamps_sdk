@@ -1,6 +1,6 @@
 export const getBtcBalance = async (address: string) => {
     const utxos = await fetch(
-        `https://mempool.space/api/address/${address}/utxo`
+        `https://mempool.fractalbitcoin.io/api/address/${address}/utxo`
     );
     const utxosJson = await utxos.json();
     const balance = utxosJson.reduce((acc, utxo) => acc + utxo.value, 0);
@@ -9,7 +9,7 @@ export const getBtcBalance = async (address: string) => {
 
 export const getBtcAddressInfo = async (address: string) => {
     const utxos = await fetch(
-        `https://mempool.space/api/address/${address}`
+        `https://mempool.fractalbitcoin.io/api/address/${address}`
     );
     const {
         chain_stats,

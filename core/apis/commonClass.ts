@@ -2,7 +2,7 @@
 
 
 
-const BTC_DATA_ENDPOINT_URL="https://mempool.space";
+const BTC_DATA_ENDPOINT_URL="https://mempool.fractalbitcoin.io";
 const STAMPCHAIN_API_URL="https://stampchain.io/api/v2";
 
 export class CommonClass {
